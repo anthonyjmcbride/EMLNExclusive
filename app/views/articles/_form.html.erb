@@ -1,31 +1,31 @@
-<%= form_with model: @article, local: true do |form| %>
+<div id="new-article-form">
+  <%= form_with model: @article, local: true do |form| %>
 
-  <% if @article.errors.any? %>
-    <div id="error_explanation">
-      <h2>
-        <%= pluralize(@article.errors.count, "error") %> prohibited
-        this article from being saved:
-      </h2>
-      <ul>
-        <% @article.errors.full_messages.each do |msg| %>
-          <li><%= msg %></li>
-        <% end %>
-      </ul>
+    <% if @article.errors.any? %>
+      <div id="error_explanation">
+        <h2>
+          <%= pluralize(@article.errors.count, "error") %> prohibited
+          this article from being saved:
+        </h2>
+        <ul>
+          <% @article.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="container">
+      <span id="title"><%= form.label :title %></span><br>
+      <span id="text-field"><%= form.text_field :title, :size => '90%' %></span>
     </div>
+
+    <div class="container">
+      <span id="title"><%= form.label :text %></span><br>
+      <center><span id="text-area"><%= form.text_area :text, {:style => 'width: 80%; height: 100px;'} %></span></center>
+    </div>
+
+    <center><%= form.submit 'Create Article', :class => 'button' %> <%= link_to 'Back', articles_path, :class => 'button' %></center>
+
   <% end %>
-
-  <p>
-    <%= form.label :title %><br>
-    <%= form.text_field :title %>
-  </p>
-
-  <p>
-    <%= form.label :text %><br>
-    <%= form.text_area :text %>
-  </p>
-
-  <p>
-    <%= form.submit %>
-  </p>
-
-<% end %>
+</div>

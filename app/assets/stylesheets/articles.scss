@@ -1,3 +1,66 @@
 // Place all the styles related to the Articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.header-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+table.article-display-table {
+  // border: 1px green solid;
+  height: 100%;
+  background-color: #fcfcfc;
+}
+
+  table.individual-article {
+    // border: 1px red solid;
+    width: 90%;
+    background-color: white;
+    border-radius: 3px;
+    padding: 10px 30px;
+  }
+    td.article-title {
+      // border: 3px yellow solid;
+      font-size: 30px;
+      font-weight: 400;
+    }
+    td.article-text {
+      // border: 3px purple solid;
+      padding: 10px 20px;
+      font-size: 20px;
+      font-weight: 300;
+      letter-spacing: 1.1px;
+    }
+    td.article-options {
+      // border: 3px gray solid;
+      text-align: center;
+    }
+      .option {
+        // border: 1px gray solid;
+        font-size: 12px;
+        color: orange;
+        padding: 5px;
+        background-color: white;
+        border-radius: 5px;
+        font-weight: bold;
+      }
+      #big-option-div {
+        padding: 20px;
+        margin: 5px;
+        text-align: right;
+      }
+        .big-option {
+          font-size: 18px;
+          color: orange;
+          padding: 7px 10px;
+          background-color: orange;
+          border: 1px orange solid;
+          border-radius: 10px;
+          font-weight: bold;
+        }
+    div.horizontal-line {
+      border: 0.5px rgba(51,51,51,0.1) solid;
+      margin: 25px 0px;
+      width: 85%;
+    }
