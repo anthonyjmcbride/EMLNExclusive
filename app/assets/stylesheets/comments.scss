@@ -1,3 +1,29 @@
 // Place all the styles related to the Comments controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+.individual-article {
+  // border: 1px red solid;
+  width: 90%;
+  background-color: white;
+  border-radius: 3px;
+  padding: 10px 30px;
+}
+.article-title {
+  // border: 3px yellow solid;
+  font-size: 30px;
+  font-weight: 400;
+}
+.article-text {
+  // border: 3px purple solid;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 1.1px;
+}
+
+div.comment-title {
+  border: 1px blue solid;
+}

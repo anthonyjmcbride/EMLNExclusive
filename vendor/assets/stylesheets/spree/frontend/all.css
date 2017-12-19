@@ -8,3 +8,8 @@
  *= require_self
  *= require_tree .
 */
+
+body {
+  font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  letter-spacing: -0.05em;
+}
