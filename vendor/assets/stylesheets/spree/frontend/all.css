@@ -9,11 +9,6 @@
  *= require_tree .
 */
 
-body {
-  font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-  letter-spacing: -0.05em;
-}
-
 /* Background CSS */
 * {
   box-sizing: border-box;
@@ -26,6 +21,41 @@ a {
   text-decoration: none !important;
   /*gets rid of the underline under links*/
 }
+
+body {
+  font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  letter-spacing: -0.05em;
+}
+
+/* HEADER CSS */
+
+input.btn.btn-success {
+  border: none;
+  background-color: rgba(209,193,160,0);
+  color: orange;
+  border: 1px orange solid;
+}
+ input.btn.btn-success:hover {
+   background-color: orange;
+   color: white;
+ }
+
+#main-nav-bar.navbar, #spree-header {
+  background-color: white;
+}
+#main-nav-bar.navbar {
+  /*overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: 0;*/
+}
+  li#home-link {
+    display: none;
+  }
+
+
+/* BODY CSS */
 
 #sidebar {
   display: none;
@@ -93,29 +123,3 @@ a {
   .pagination > li > a, .pagination > li > span, .pagination > li > a:hover, .pagination > li > span:hover {
     color: orange;
   }
-
-
-  input.btn.btn-success {
-    border: none;
-    background-color: rgba(209,193,160,0);
-    color: orange;
-    border: 1px orange solid;
-  }
-   input.btn.btn-success:hover {
-     background-color: orange;
-     color: white;
-   }
-
-  #main-nav-bar.navbar, #spree-header {
-    background-color: white;
-  }
-  #main-nav-bar.navbar {
-    /*overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    margin: 0;*/
-  }
-    li#home-link {
-      display: none;
-    }
