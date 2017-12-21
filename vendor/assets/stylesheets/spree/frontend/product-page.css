@@ -1,0 +1,26 @@
+/*CSS for the product description page*/
+
+.breadcrumb > li > span > a > span {
+  color: rgba(51,51,51,1) !important;
+}
+div#product-description-page.panel-body {
+  height: 450px;
+}
+div.well {
+  background-color: rgba(209,193,160,0.1);
+  border: 0px rgba(209,193,160,0.2) solid;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.05);
+}
+div#product-price-cart {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+  div#product-price-cart > div.add-to-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+  }
