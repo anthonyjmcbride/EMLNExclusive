@@ -8,8 +8,19 @@
                                   @taxon ? @taxon.id : params[:taxon]), 'aria-label' => 'Taxon', class: "form-control" %>
     <% end %>
   </div> -->
-  <div class="form-group">
-    <%= search_field_tag :keywords, params[:keywords], placeholder: Spree.t(:search), class: "form-control" %>
+  <div class="search-and-cart-main-navbar">
+    <div class="form-group">
+      <%= search_field_tag :keywords, params[:keywords], placeholder: Spree.t(:search), class: "form-control" %>
+    </div>
+    <%= submit_tag Spree.t(:search), name: nil, class: "btn btn-success" %>
+    <% end %>
+    <ul class="nav navbar-nav navbar-right" data-hook>
+      <li id="link-to-cart" data-hook>
+        <noscript>
+          <%= link_to_cart %>
+        </noscript>
+        &nbsp;
+      </li>
+      <script>Spree.fetch_cart()</script>
+    </ul>
   </div>
-  <%= submit_tag Spree.t(:search), name: nil, class: "btn btn-success" %>
-<% end %>
