@@ -1,15 +1,46 @@
 /*CSS for the product description page*/
+/*color pallet
+rgba(209,193,160,0.2)
+orange
+rgba(51,51,51);*/
 
+ol.breadcrumb {
+  background-color: white;
+  border-bottom: 1px rgba(51,51,51,0.2) solid;
+  border-radius: 0px;
+}
+
+.product-photo-container {
+  width: 70%;
+  height: 100%;
+}
+.product-description-container {
+  width: 30%;
+}
 .breadcrumb > li > span > a > span {
   color: rgba(51,51,51,1) !important;
 }
 div#product-description-page.panel-body {
   height: 450px;
 }
+
+.product-title {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  letter-spacing: -0.05em;
+  font-size: 30px;
+  font-weight: 600;
+  color: black
+}
 div.well {
-  background-color: rgba(209,193,160,0.1);
-  border: 0px rgba(209,193,160,0.2) solid;
+  background-color: white;
+  border: 0px #f9f9f9 solid;
   box-shadow: 0 0px 0px rgba(0, 0, 0, 0.05);
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: -0.01em;
+  margin-bottom: 10px;
+  padding-left: 0px;
 }
 div#product-price-cart {
   display: flex;
@@ -17,10 +48,36 @@ div#product-price-cart {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+  background-color: rgba(209,193,160,0.1);
+  border-radius: 3px;
 }
   div#product-price-cart > div.add-to-cart {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 25%;
+    width: 50%;
   }
+    div#product-price > div > span {
+      font-size: 36px;
+    }
+  .list-group-item {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px white solid;
+    border-top: 1px rgba(51,51,51,0.1) solid;
+    border-radius: 0px;
+    /*border-top: 1px rgba(51,51,51,1) solid;*/
+    width: 30%;
+  }
+    .list-group-item:first-child, .list-group-item:last-child {
+    border-radius: 0px;
+    }
+      .list-group-item > a {
+        color: rgba(51,51,51,1);
+      }
+        .list-group-item > a:hover {
+          color: orange;
+        }

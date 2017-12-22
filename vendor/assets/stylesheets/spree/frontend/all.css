@@ -23,6 +23,7 @@ a {
 }
 
 body {
-  font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
   letter-spacing: -0.05em;
+  color: black;
 }
