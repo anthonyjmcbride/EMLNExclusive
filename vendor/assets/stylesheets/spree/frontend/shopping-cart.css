@@ -1,0 +1,47 @@
+
+/*color pallet
+rgba(209,193,160,0.2)
+orange
+rgba(51,51,51);
+rgba(250, 235, 215, 0.5)*/
+
+.table > thead > tr.active > th {
+  background-color: white;
+  border-bottom: 1px solid black;
+}
+
+td.cart-item-description > h4 > a {
+  color: orange;
+}
+td.cart-item-price, td.cart-item-total {
+  color: rgba(51,51,51,0.7);
+}
+td.cart-item-delete > a {
+  color: red;
+}
+.table > tbody > tr.warning > td {
+  background-color: white;
+  /*border-bottom: 1px black solid;*/
+}
+
+p#clear_cart_link > a, p#clear_cart_link > input {
+  color: black;
+  border: 1px rgba(51,51,51,0.1) solid;
+  border-radius: 4px;
+  padding: 7px;
+  font-size: 14px;
+}
+
+.btn-success {
+  color: #fff;
+  background-color: rgba(255, 160, 45, 0.8);
+  border-color: rgba(255, 160, 45, 0.8);
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  border-radius: 4px;
+}
+  .btn-success:hover {
+    background-color: rgb(255, 160, 45);
+    border-color: rgb(255, 160, 45);
+  }
