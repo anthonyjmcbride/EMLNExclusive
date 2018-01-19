@@ -1,6 +1,10 @@
 /* HEADER CSS */
 /*rgba(250, 235, 215, 0.5)*/
 
+.logo-container {
+  width: 45% !important;
+  height: auto;
+}
 header#header {
     background: #fffaf0 !important;
     padding: 5px 0px !important;
