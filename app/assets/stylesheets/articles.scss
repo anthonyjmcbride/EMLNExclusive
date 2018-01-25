@@ -1,12 +1,87 @@
 // Place all the styles related to the Articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+html {
+  border: 0px white solid;
+  width: auto;
+}
+body {
+  width: auto;
+  border: none;
+}
+//NAVIGATION BAR NAVIGATION BAR
+.nav-container {
+  background-color: #fffaf0;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #fffaf0;
+    overflow: hidden;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: right;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+    color: orange;
+}
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: orange;
+    color: white;
+}
+
+// LOGO HEADER LOGO HEADER LOGO HEADER
+div.logo-header {
+  width: auto;
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fcfcfc;
+}
+  div.logo-header > img {
+    width: auto;
+    height: 25vh;
+  }
+
 .header-div {
   display: flex;
   justify-content: space-around;
   justify-content: center;
   align-items: center;
 }
+
+// HEADER CONTENT HEADER CONTENT
+div.container-div {
+  background-color: white;
+  padding: 10px 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 2px 1px 8px #e8e8e8;
+  border-left: 1px orange solid;
+  border-right: 1px orange solid;
+}
+div.content-slider {
+  width: 70%;
+  height: 50vh;
+  border: red 1px solid;
+  display: flex;
+  justify-content: space-around;
+  justify-content: center;
+  margin: 10px 30px;
+}
+
   #page-title {
     display: flex;
     justify-content: center;
@@ -14,18 +89,29 @@
   }
 
 
+// ARTICLES ARTICLES ARTICLES ARTICLES
+.recent-post {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+  padding: 40px 30px 10px 30px;
+  font-size: 30px;
+  font-weight: bold;
+}
 table.article-display-table {
   // border: 1px green solid;
-  height: 100%;
-  background-color: #fcfcfc;
+  background-color: white;
+  display: flex;
+  justify-content: center;
 }
-
   table.individual-article {
-    // border: 1px red solid;
-    width: 90%;
+    border-left: 1px orange solid;
+    width: 95%;
     background-color: white;
     border-radius: 3px;
-    padding: 10px 30px;
+    // padding: 10px 30px;
+    box-shadow: 2px 1px 8px #e8e8e8;
   }
     td.article-title {
       // border: 3px yellow solid;
@@ -71,3 +157,20 @@ table.article-display-table {
       margin: 25px 0px;
       width: 85%;
     }
+
+// RECENT PODCAST RECENT PODCAST RECENT PODCAST RECENT PODCAST
+
+div.featured-podcast {
+  background-color: #f5f5f5;
+  border-left: 1px solid orange;
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 20px;
+  box-shadow: 2px 1px 8px #e8e8e8;
+}
