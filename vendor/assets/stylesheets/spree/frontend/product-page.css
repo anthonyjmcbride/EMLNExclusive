@@ -3,29 +3,36 @@
 rgba(250, 235, 215, 0.5)
 orange
 rgba(51,51,51);*/
-img {
-  height: auto;
-  width: 100%;
+div.row#product-page-image {
+  /*border: 1px yellow solid;*/
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
 }
-ol.breadcrumb {
-  background-color: white;
-  border-bottom: 1px rgba(51,51,51,0.2) solid;
-  border-radius: 0px;
-}
+  .product-photo-container {
+    height: inherit;
+    background-size: contain;
+    /*border: 1px blue solid;*/
+  }
+  .image-container > img {
+    height: auto;
+    width: 100%;
+  }
+  ol.breadcrumb {
+    background-color: white;
+    border-bottom: 1px rgba(51,51,51,0.2) solid;
+    border-radius: 0px;
+  }
 
-.product-photo-container {
-  width: 70%;
-  height: auto;
-  background-size: contain;
-}
 .product-description-container {
-  width: 30%;
+  width: 50%;
+  /*border: 1px red solid;*/
 }
 .breadcrumb > li > span > a > span {
   color: rgba(51,51,51,1) !important;
 }
 div#product-description-page.panel-body {
-  height: auto;
+  /*height: auto;*/
 }
 
 .product-title {
