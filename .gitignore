@@ -19,5 +19,10 @@
 .byebug_history
 .env
 
+<<<<<<< HEAD
 # Ignore encrypted secrets key file.
 config/secrets.yml.key
+=======
+/public/assets
+/public/spree
+>>>>>>> cfe6e45a975db1b65d498d9d6974a3238c743d04
